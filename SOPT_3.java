@@ -1,4 +1,4 @@
-package algorithm_JAVA;
+package org.sopt;
 
 import java.util.Scanner;
 import java.util.Stack;
