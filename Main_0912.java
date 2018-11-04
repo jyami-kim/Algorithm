@@ -4,13 +4,13 @@ import java.util.Scanner;
 import java.util.Stack;
 
 
-public class SOPT_4 {
+public class Main_0912 {
 
     public static StringBuilder stringBuilder = new StringBuilder();
 
 
     public static boolean check(String str) {
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<Character>();
         char[] word = new char[str.length()];
         for(int i=0; i<str.length();i++){
             word[i] = str.charAt(i);

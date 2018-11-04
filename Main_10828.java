@@ -3,9 +3,9 @@ package org.sopt;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SOPT_1 {
+public class Main_10828 {
 	static StringBuilder stringBuilder = new StringBuilder();
-	static  ArrayList<Integer> stack = new ArrayList<>();
+	static  ArrayList<Integer> stack = new ArrayList<Integer>();
 	static int top;
 	public static void push(int num){
 		stack.add(num);

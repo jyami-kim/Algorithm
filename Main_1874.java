@@ -3,12 +3,12 @@ package org.sopt;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class SOPT_3 {
+public class Main_1874 {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         StringBuilder stringBuilder = new StringBuilder();
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> stack = new Stack<Integer>();
 
         int arrsize = in.nextInt();
         int[] arr = new int[arrsize];

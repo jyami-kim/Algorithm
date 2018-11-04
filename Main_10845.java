@@ -3,7 +3,7 @@ package org.sopt;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class SOPT_2 {
+public class Main_10845 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int rear = -1;
