@@ -13,11 +13,21 @@ JAVA algorithm study - in SOPT
 ##### 1148 - 조세퍼스 문제 [[문제](https://www.acmicpc.net/problem/1148)]
 ##### 1260 - DFS와 BFS [[문제](https://www.acmicpc.net/problem/1260)]
 
+
+
 ### 2. 트리
 
 ##### 5639 - 이진 검색 트리 [[문제](https://www.acmicpc.net/problem/5639)][[솔루션](https://github.com/mjung1798/algorithm_JAVA/blob/master/Main_5639.java)]
 
+
+
 ### 3. 구현
+
+##### 10039 - 평균 점수 [[문제](https://www.acmicpc.net/problem/10039)][[솔루션](https://github.com/mjung1798/algorithm_JAVA/blob/master/Main_10039.java)]
+
+##### 10797 - 10부제 [[문제](https://www.acmicpc.net/problem/10797)][[솔루션](https://github.com/mjung1798/algorithm_JAVA/blob/master/Main_10797.java)]
+
+
 
 ### 4. 그래프
 
