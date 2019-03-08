@@ -1,4 +1,4 @@
-package org.sopt;
+package com.jyami;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;

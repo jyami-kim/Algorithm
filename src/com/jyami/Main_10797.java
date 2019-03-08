@@ -1,6 +1,7 @@
-package org.sopt;
+package com.jyami;
 
 import java.util.Scanner;
+
 public class Main_10797 {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);

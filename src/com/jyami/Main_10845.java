@@ -1,7 +1,7 @@
-package org.sopt;
+package com.jyami;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main_10845 {
     public static void main(String[] args){

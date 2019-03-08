@@ -1,4 +1,4 @@
-package org.sopt;
+package com.jyami;
 
 import java.util.ArrayList;
 import java.util.Scanner;
