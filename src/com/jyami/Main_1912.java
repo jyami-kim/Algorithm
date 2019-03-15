@@ -13,14 +13,12 @@ public class Main_1912 {
 
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-        // int [][] a = new int[number][number];
         int [] a = new int[number];
         int count=0;
         Integer max = null;
 
         while(st.hasMoreTokens()){
             a[count] = Integer.valueOf(st.nextToken());
-
             if( count == 0 ){
                 max = a[0];
             }
@@ -32,7 +30,7 @@ public class Main_1912 {
 
         int b[] = new int[number];
 
-        for(int i=1 ; i< number-1; i++){
+        for(int i=0 ; i< number; i++){
             for(int j = 0; j<number-i; j++){
                 b[j] = b[j] + a[i+j];
                 if(max < b[j]){
