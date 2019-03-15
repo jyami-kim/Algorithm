@@ -28,17 +28,19 @@ public class Main_1912 {
             count++;
         }
 
-        int b[] = new int[number];
+        int dp[] = new int[number];
 
-        for(int i=0 ; i< number; i++){
-            for(int j = 0; j<number-i; j++){
-                b[j] = b[j] + a[i+j];
-                if(max < b[j]){
-                    max = b[j];
-                }
+        dp[0] = a[0];
+        for(int i =1 ; i<number; i++){
+            if(dp[i-1] + a[i] > a[i]){
+                dp[i] = + a[i] + dp[i-1];
+            }else{
+                dp[i] = a[i];
+            }
+            if(dp[i] >max){
+                max = dp[i];
             }
         }
-
         System.out.println(max);
     }
 }
