@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class AlgoReport1 {
+public class AlgoReport2 {
 
     public static final String DEFAULT_DIR  = "testData";
 
@@ -19,7 +19,8 @@ public class AlgoReport1 {
         int n = 0;     // vertex의 개수
         int start =0 ; // 시작 vertex의 번호
 
-        List<List<Integer>> weight = null; //stream()문법으로 parsing을 빠르게 하기 위해 Array 대신 List 클래스 사용
+        List<List<Integer>> weight = null; //stream()문법으로
+        // parsing을 빠르게 하기 위해 Array 대신 List 클래스 사용
 
         try {
             //Algorithm 에서 Scanner 보다 BufferedReader가 많은 값을 입력할 때 더 빠르기 때문에 사용
