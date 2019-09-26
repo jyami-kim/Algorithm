@@ -42,12 +42,9 @@ public class Main_1415 {
         int sum = 0;
         for (int i = 0; i < n; i++) {
             if (visited[i]) {
-//                System.out.print(arr[i] + " ");
                 sum += arr[i];
             }
         }
-//        System.out.println(sum);
-//        System.out.println();
         return sum;
     }
 
