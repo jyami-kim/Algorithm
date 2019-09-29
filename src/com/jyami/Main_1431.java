@@ -61,6 +61,6 @@ class Item implements Comparable<Item> {
     public int compareTo(Item o) {
         return this.size > o.size ? 1 : this.size < o.size ? -1 :
                 this.number > o.number ? 1 : this.number < o.number ? -1 :
-                        this.text.compareTo(o.text);
+                        this.text.compareTo(o.text) > 0 ? 1 : this.text.compareTo(o.text) < 0 ? -1 : 0;
     }
 }
