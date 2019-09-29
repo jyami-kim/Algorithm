@@ -7,6 +7,15 @@ import java.util.Scanner;
 
 public class Main_1431 {
     public static void main(String args[]) {
+
+        String str = "안녕1234";
+        String replace = str.replace("1234", "");
+
+        String replaceAll = str.replaceAll("\\d", "");
+
+        System.out.println(replace);
+        System.out.println(replaceAll);
+
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
@@ -36,23 +45,12 @@ class Item implements Comparable<Item> {
         this.number = findNumber(text);
     }
 
-    private int parsing(String str) {
-        try {
-            int number = Integer.parseInt(str);
-            return number;
-        } catch (NumberFormatException e) {
-            return 0;
-        }
-    }
-
     private int findNumber(String str) {
-        String replace = str.replaceAll("\\D", "");
-        int num = parsing(replace);
-
         int sum = 0;
-        while (num != 0) {
-            sum += num % 10;
-            num = num / 10;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+                sum += str.charAt(i) - '0';
+            }
         }
         return sum;
     }
@@ -61,6 +59,6 @@ class Item implements Comparable<Item> {
     public int compareTo(Item o) {
         return this.size > o.size ? 1 : this.size < o.size ? -1 :
                 this.number > o.number ? 1 : this.number < o.number ? -1 :
-                        this.text.compareTo(o.text) > 0 ? 1 : this.text.compareTo(o.text) < 0 ? -1 : 0;
+                        this.text.compareTo(o.text);
     }
 }
