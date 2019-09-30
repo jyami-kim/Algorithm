@@ -2,9 +2,6 @@
 JAVA algorithm study
 
 ### 백준 알고리즘
-[소스 폴더 보기](./src/com/jyami/baekjoon)
-
-### 백준 알고리즘
 백준 알고리즘 문제를 해결한 소스코드 입니다.
 [소스 폴더 보기](./src/com/jyami/baekjoon)
 
