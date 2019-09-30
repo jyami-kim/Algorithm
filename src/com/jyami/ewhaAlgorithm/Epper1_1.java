@@ -1,4 +1,4 @@
-package com.jyami;
+package com.jyami.ewhaAlgorithm;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.jyami;
+package com.jyami.baekjoon;
 
 import java.util.ArrayList;
 import java.util.Scanner;

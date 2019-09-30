@@ -1,8 +1,7 @@
-package com.jyami;
+package com.jyami.programmers;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 
 public class Programmers_LevelTest_1 {
 
