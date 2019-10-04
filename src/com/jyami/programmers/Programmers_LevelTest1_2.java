@@ -1,6 +1,6 @@
 package com.jyami.programmers;
 
-public class Programmers_LevelTest_2 {
+public class Programmers_LevelTest1_2 {
     public static void main(String args[]) {
         int n = 5;
         int[] lost = {2, 4};
