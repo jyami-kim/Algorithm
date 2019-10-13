@@ -4,9 +4,13 @@ import java.util.regex.Pattern;
 
 public class HackDay2019Winter3 {
     public static void main(String args[]) {
-        String command = "<v>AB^CYv^XAZ";
-        String[] buttons = {"v>AB^CYv^XA", "<v>A", "^XAZ", "Yv^XA", ">AB^"};
-        int[] scores = {50, 18, 20, 30, 25};
+//        String command = "<v>AB^CYv^XAZ";
+//        String[] buttons = {"v>AB^CYv^XA", "<v>A", "^XAZ", "Yv^XA", ">AB^"};
+//        int[] scores = {50, 18, 20, 30, 25};
+
+        String command = "abab";
+        String[] buttons = {"ab", "aba"};
+        int[] scores = {20, 30};
 //        String command = "ABCXYZ";
 //        String[] buttons = {"BCXY"};
 //        int[] scores = {2};

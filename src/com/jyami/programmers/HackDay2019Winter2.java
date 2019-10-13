@@ -6,7 +6,11 @@ import java.util.HashSet;
 public class HackDay2019Winter2 {
     public static void main(String args[]) {
 //        String[] input = {"..........", "AAACC.....", ".AAA.....Z", "..AAAA..C.", "...BBBBB..", "....BBB...", "...ZBBB...", "ZZZZAAAC..", ".....CCCC.", "QQ......C.", ".........."};
-        String[] input = {"A.B.C.D", ".B.C.D."};
+//        String[] input = {"A.B.C.D", ".B.C.D."};
+//        String[] input = {"AAAAAAA", "A.....A", "A.BC..A", "A.....A", "AAAAAAA"};
+//        String[] input = {"AA.AAAA", "A.D...A", "A.BCD.A", "A.D.D.A", "AAAA.AA"};
+        String[] input = {"AB"};
+//        String[] input = {"AA", "BC"};
 
         int[] solution = new Solution().solution(input);
         System.out.println(solution[0]);
@@ -22,7 +26,7 @@ public class HackDay2019Winter2 {
 
         public int[] solution(String[] maps) {
             row = maps.length + 2;
-            col = maps[1].length() + 2;
+            col = maps[0].length() + 2;
 
             char[][] littleMap = makeCharMap(maps);
 
