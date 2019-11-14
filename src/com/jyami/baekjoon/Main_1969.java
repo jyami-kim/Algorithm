@@ -31,9 +31,13 @@ public class Main_1969 {
                 char dnaValue = matrix[i][j];
                 dnaSet.pushSet(dnaValue);
             }
-            DNA hammingDistance = dnaSet.getHammingDistance();
-            resultHammingDistance += hammingDistance.count;
-            sb.append(hammingDistance.name);
+
+            Collections.sort(dnaSet.dnas);
+
+            DNA hamming = dnaSet.dnas.get(0);
+
+            resultHammingDistance += (row - hamming.count);
+            sb.append(hamming.name);
         }
 
 
@@ -69,8 +73,8 @@ public class Main_1969 {
             }
         }
 
-        public DNA getHammingDistance() {
-            Collections.sort(dnas);
+        public DNA getHammingDistance(int num) {
+
             int count = 0;
             for (int i = 1; i < 4; i++) {
                 count += dnas.get(i).count;
