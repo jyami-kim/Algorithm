@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main_1676 {
     public static void main(String[] args) throws IOException {
-        //n!에서 뒤에서부터 처음 0이아닌 숫자가 나올 때까지 0의 개수를 구하는 프로그램을 작성하시오 : 곱셈임 2*5의 쌍을 찾기
+        //n!에서 뒤에서부터 처음 0이아닌 숫자가 나올l 때까지 0의 개수를 구하는 프로그램을 작성하시오 : 곱셈임 2*5의 쌍을 찾기
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
