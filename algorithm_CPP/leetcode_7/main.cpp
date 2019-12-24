@@ -5,7 +5,6 @@
 #include <cstdio>
 #include "stdio.h"
 
-
 class Solution {
 public:
     int hello(int a) {
@@ -29,5 +28,5 @@ public:
 int main() {
     Solution solution = Solution();
     int a = solution.hello(1234);
-    printf("%d", a);
+    printf("%d\n", a);
 }
