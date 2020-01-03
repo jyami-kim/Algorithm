@@ -1,4 +1,4 @@
-package com.jyami.programmers;
+package com.jyami.programmers.test;
 
 public class Programmers_LevelTest2_1 {
     public static void main(String args[]) {

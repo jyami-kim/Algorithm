@@ -1,4 +1,4 @@
-package com.jyami.programmers;
+package com.jyami.programmers.test;
 
 public class HackDay2019Winter1 {
     public static void main(String args[]) {
