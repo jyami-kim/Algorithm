@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8C10933823B278F8003FF44D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C10933723B278F8003FF44D /* main.cpp */; };
+		8CF9D1C023BF8C5F00E89BFA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9D1BF23BF8C5F00E89BFA /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8C10933223B278F8003FF44D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8CF9D1BB23BF8C5F00E89BFA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		8C10933423B278F8003FF44D /* leetcode_7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode_7; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C10933723B278F8003FF44D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8CF9D1BD23BF8C5F00E89BFA /* hash_not_completion_player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hash_not_completion_player; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF9D1BF23BF8C5F00E89BFA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C10933123B278F8003FF44D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF9D1BA23BF8C5F00E89BFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +60,8 @@
 		8C10932B23B278F8003FF44D = {
 			isa = PBXGroup;
 			children = (
-				8C10933623B278F8003FF44D /* leetcode_7 */,
+				8CF9D1B823BF8C0B00E89BFA /* programmers */,
+				8CF9D1B723BF8BF200E89BFA /* leetcode */,
 				8C10933523B278F8003FF44D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				8C10933423B278F8003FF44D /* leetcode_7 */,
+				8CF9D1BD23BF8C5F00E89BFA /* hash_not_completion_player */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,30 @@
 				8C10933723B278F8003FF44D /* main.cpp */,
 			);
 			path = leetcode_7;
+			sourceTree = "<group>";
+		};
+		8CF9D1B723BF8BF200E89BFA /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				8C10933623B278F8003FF44D /* leetcode_7 */,
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
+		8CF9D1B823BF8C0B00E89BFA /* programmers */ = {
+			isa = PBXGroup;
+			children = (
+				8CF9D1BE23BF8C5F00E89BFA /* hash_not_completion_player */,
+			);
+			path = programmers;
+			sourceTree = "<group>";
+		};
+		8CF9D1BE23BF8C5F00E89BFA /* hash_not_completion_player */ = {
+			isa = PBXGroup;
+			children = (
+				8CF9D1BF23BF8C5F00E89BFA /* main.cpp */,
+			);
+			path = hash_not_completion_player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +127,23 @@
 			productReference = 8C10933423B278F8003FF44D /* leetcode_7 */;
 			productType = "com.apple.product-type.tool";
 		};
+		8CF9D1BC23BF8C5F00E89BFA /* hash_not_completion_player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF9D1C123BF8C5F00E89BFA /* Build configuration list for PBXNativeTarget "hash_not_completion_player" */;
+			buildPhases = (
+				8CF9D1B923BF8C5F00E89BFA /* Sources */,
+				8CF9D1BA23BF8C5F00E89BFA /* Frameworks */,
+				8CF9D1BB23BF8C5F00E89BFA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hash_not_completion_player;
+			productName = hash_not_completion_player;
+			productReference = 8CF9D1BD23BF8C5F00E89BFA /* hash_not_completion_player */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +154,9 @@
 				ORGANIZATIONNAME = jyami;
 				TargetAttributes = {
 					8C10933323B278F8003FF44D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8CF9D1BC23BF8C5F00E89BFA = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -110,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				8C10933323B278F8003FF44D /* leetcode_7 */,
+				8CF9D1BC23BF8C5F00E89BFA /* hash_not_completion_player */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C10933823B278F8003FF44D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF9D1B923BF8C5F00E89BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF9D1C023BF8C5F00E89BFA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +329,28 @@
 			};
 			name = Release;
 		};
+		8CF9D1C223BF8C5F00E89BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP68BDZ34H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8CF9D1C323BF8C5F00E89BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP68BDZ34H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +368,15 @@
 			buildConfigurations = (
 				8C10933C23B278F8003FF44D /* Debug */,
 				8C10933D23B278F8003FF44D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF9D1C123BF8C5F00E89BFA /* Build configuration list for PBXNativeTarget "hash_not_completion_player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF9D1C223BF8C5F00E89BFA /* Debug */,
+				8CF9D1C323BF8C5F00E89BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
