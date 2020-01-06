@@ -40,11 +40,12 @@ public class MostBigNumber {
         public String solution(int[] numbers) {
             StringBuilder sb = new StringBuilder();
             List<Integer> collect = Arrays.stream(numbers)
-                    .mapToObj(x -> {
-                        return Integer.toString(x).chars().map(c -> c - '0').toArray();
-                    }).sorted(new BigComparator())
-                    .map(this::makeInt)
+                    .mapToObj(String::valueOf)
+                    .sorted(new BigComparator())
+                    .mapToInt(Integer::parseInt)
+                    .boxed()
                     .collect(Collectors.toList());
+
             if(collect.get(0) == 0){
                 return "0";
             }
@@ -54,51 +55,13 @@ public class MostBigNumber {
             return sb.toString();
         }
 
-        public int makeInt(int[] arr){
-            int result = 0;
-            for(int i : arr){
-                result = result*10 + i;
-            }
-            return result;
-        }
 
-        class BigComparator implements Comparator<int[]> {
+        class BigComparator implements Comparator<String> {
             @Override
-            public int compare(int[] o1, int[] o2) {
-                int i1 = 0;
-                int i2 = 0;
-                while(true){
-                    int l1 = o1.length - i1;
-                    int l2 = o2.length - i2;
-                    if(l1 > 0 && l2 > 0){
-                        if(o1[i1] > o2[i2]){
-                            return -1;
-                        }else if(o1[i1] < o2[i2]) {
-                            return 1;
-                        }else{
-                            i1++;
-                            i2++;
-                        }
-                    }else if(l1 < l2){ // 1번이 더 짧을 때
-                        if(o1[i1-1] > o2[i2]){ // 2번의 다음자리 수가 더 작음
-                            return -1;
-                        }else if(o1[i1-1] < o2[i2]){ // 2번의 다음자리수가 더
-                            return 1;
-                        }else{
-                            i2++;
-                        }
-                    }else if(l2 < l1){ // 2번이 더 짧을 때
-                        if(o2[i2-1] > o1[i1]){
-                            return 1; // 2가 앞에니까 1은 -1
-                        }else if(o2[i2-1] < o1[i1]){
-                            return -1;
-                        }else{
-                            i1++;
-                        }
-                    }else{
-                        return Integer.compare(o1.length, o2.length);
-                    }
-                }
+            public int compare(String o1, String o2) {
+                String l1 = o1 + o2;
+                String l2 = o2 + o1;
+                return l2.compareTo(l1);
             }
         }
     }
