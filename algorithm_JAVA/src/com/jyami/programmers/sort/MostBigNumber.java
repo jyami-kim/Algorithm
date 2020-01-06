@@ -14,12 +14,26 @@ public class MostBigNumber {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] array = {6, 10, 2};
-        int[] array2 = {3, 30, 34, 5, 9};
-        int[] array3 = {998,9,999};
 
-        String solution1 = solution.solution(array2);
-        System.out.println(solution1);
+        int[] ar = {40,403};
+
+        String sol = solution.solution(ar);
+        System.out.println(sol);
+
+        int[][] array = {{1,2,3},
+                {6,10,2},
+                {3, 30, 34, 5, 9},
+                {998,9,999},
+                {20,200,20}, //이
+                {12,121},
+                {0,0,0},
+                {10,100,1000}};
+
+        for(int[] arr : array){
+            String solution1 = solution.solution(arr);
+            System.out.println(solution1);
+        }
+
     }
 
     static class Solution {
@@ -31,6 +45,9 @@ public class MostBigNumber {
                     }).sorted(new BigComparator())
                     .map(this::makeInt)
                     .collect(Collectors.toList());
+            if(collect.get(0) == 0){
+                return "0";
+            }
             for(int i : collect){
                 sb.append(i);
             }
@@ -51,33 +68,35 @@ public class MostBigNumber {
                 int i1 = 0;
                 int i2 = 0;
                 while(true){
-                    if(o1[i1] > o2[i2]){
-                        return -1;
-                    }else if(o1[i1] < o2[i2]){
-                        return 1;
-                    }else{
-                        if(i1 < o1.length && i2 < o2.length){
+                    int l1 = o1.length - i1;
+                    int l2 = o2.length - i2;
+                    if(l1 > 0 && l2 > 0){
+                        if(o1[i1] > o2[i2]){
+                            return -1;
+                        }else if(o1[i1] < o2[i2]) {
+                            return 1;
+                        }else{
                             i1++;
                             i2++;
-                        }else if(i1 >= o1.length){ // 1번이 더 짧을 때
-                            if(o1[i1-1] > o2[i2+1]){ // 2번의 다음자리 수가 더 작음
-                                return 1;
-                            }else if(o1[i1-1] > o2[i2+1]){ // 2번의 다음자리수가 더
-                                return -1;
-                            }else{
-                                i2++;
-                            }
-                        }else if(i2 >= o2.length){ // 2번이 더 짧을 때
-                            if(o2[i2-1] > o1[i1+1]){
-                                return 1;
-                            }else if(o2[i2-1] > o1[i1+1]){
-                                return -1;
-                            }else{
-                                i1++;
-                            }
-                        }else{
-                            return 0;
                         }
+                    }else if(l1 < l2){ // 1번이 더 짧을 때
+                        if(o1[i1-1] > o2[i2]){ // 2번의 다음자리 수가 더 작음
+                            return -1;
+                        }else if(o1[i1-1] < o2[i2]){ // 2번의 다음자리수가 더
+                            return 1;
+                        }else{
+                            i2++;
+                        }
+                    }else if(l2 < l1){ // 2번이 더 짧을 때
+                        if(o2[i2-1] > o1[i1]){
+                            return 1; // 2가 앞에니까 1은 -1
+                        }else if(o2[i2-1] < o1[i1]){
+                            return -1;
+                        }else{
+                            i1++;
+                        }
+                    }else{
+                        return Integer.compare(o1.length, o2.length);
                     }
                 }
             }
