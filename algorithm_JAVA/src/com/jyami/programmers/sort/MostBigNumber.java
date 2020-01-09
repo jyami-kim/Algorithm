@@ -1,7 +1,5 @@
 package com.jyami.programmers.sort;
 
-import com.sun.tools.corba.se.idl.toJavaPortable.InterfaceGen;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -24,7 +22,7 @@ public class MostBigNumber {
                 {6,10,2},
                 {3, 30, 34, 5, 9},
                 {998,9,999},
-                {20,200,20}, //이
+                {20,200,20},
                 {12,121},
                 {0,0,0},
                 {10,100,1000}};
@@ -39,17 +37,15 @@ public class MostBigNumber {
     static class Solution {
         public String solution(int[] numbers) {
             StringBuilder sb = new StringBuilder();
-            List<Integer> collect = Arrays.stream(numbers)
+            List<String> collect = Arrays.stream(numbers)
                     .mapToObj(String::valueOf)
                     .sorted(new BigComparator())
-                    .mapToInt(Integer::parseInt)
-                    .boxed()
                     .collect(Collectors.toList());
 
-            if(collect.get(0) == 0){
+            if(collect.get(0).startsWith("0")){
                 return "0";
             }
-            for(int i : collect){
+            for(String i : collect){
                 sb.append(i);
             }
             return sb.toString();
