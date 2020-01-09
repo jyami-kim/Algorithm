@@ -1,9 +1,7 @@
 package com.jyami.programmers.sort;
 
-import com.jyami.programmers.hash.PhoneNumberList;
-
 import java.util.Arrays;
-import java.util.stream.IntStream;
+import java.util.Comparator;
 
 /**
  * Created by jyami on 2020/01/06
@@ -35,7 +33,6 @@ public class KthNumber {
             for(int[] com : commands){
                 int[] result = Arrays.copyOfRange(array, --com[0], com[1]);
                 Arrays.sort(result);
-                System.out.println(Arrays.toString(result));
                 answer[i++] = result[--com[2]];
             }
 
