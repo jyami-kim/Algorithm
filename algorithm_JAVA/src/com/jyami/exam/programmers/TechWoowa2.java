@@ -1,6 +1,6 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
-public class TechCose2 {
+public class TechWoowa2 {
 
     public static void main(String args[]) {
         String log = "2019/05/01 00:59:19\n" +

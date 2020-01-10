@@ -1,10 +1,10 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TechCose4 {
+public class TechWoowa4 {
 
     public static void main(String args[]) {
         String[] infos = {"kim password", "lee abc"};

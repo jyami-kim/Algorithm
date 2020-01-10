@@ -1,6 +1,6 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
-public class TechCose1 {
+public class TechWoowa1 {
 
     public static void main(String args[]) {
         int restaurant[] = {0, 0};

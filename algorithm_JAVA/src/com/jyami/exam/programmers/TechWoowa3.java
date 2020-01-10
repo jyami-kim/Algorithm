@@ -1,4 +1,4 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
 import com.sun.deploy.util.ArrayUtil;
 
@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TechCose3 {
+public class TechWoowa3 {
 
     public static void main(String args[]) {
 //        int prices[] = {13000, 88000, 10000};

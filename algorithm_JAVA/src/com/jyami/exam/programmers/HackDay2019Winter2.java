@@ -1,4 +1,4 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
 import java.util.HashMap;
 import java.util.HashSet;

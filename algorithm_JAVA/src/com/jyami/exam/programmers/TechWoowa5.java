@@ -1,8 +1,8 @@
-package com.jyami.programmers.test;
+package com.jyami.exam.programmers;
 
 import java.util.Arrays;
 
-public class TechCose5 {
+public class TechWoowa5 {
 
     public static void main(String args[]) {
 //        String[] history = {"1.0", "2.0", "1.5"};
