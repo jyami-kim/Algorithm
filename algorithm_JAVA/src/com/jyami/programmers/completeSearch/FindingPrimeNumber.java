@@ -1,7 +1,5 @@
 package com.jyami.programmers.completeSearch;
 
-import javafx.beans.binding.StringBinding;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
