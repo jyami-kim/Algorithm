@@ -18,11 +18,11 @@ using namespace std;
 
 void combination(vector<int> nums, int r, vector<string> *result);
 void multi(string str, unordered_set<int> *result);
-int primArray(unordered_set<int> *set);
+vector<bool> primArray(unordered_set<int> *set);
 int solution(string numbers);
 
 int main() {
-    string numbers = "17";
+    string numbers = "110";
     int result = solution(numbers);
     printf("%d", result);
 }
@@ -34,7 +34,6 @@ void multi(string str, unordered_set<int> *result){
     for(int i =0; i<str.length(); i++){
         nums.push_back(str[i] - '0');
     }
-    
     sort(nums.begin(), nums.end());
     
     do{
@@ -59,7 +58,6 @@ void combination(vector<int> nums, int r, vector<string> *result){
         }
         result->push_back(answer);
     }while(next_permutation(sub.begin(), sub.end()));
-    
 }
 
 int solution(string numbers) {
@@ -69,7 +67,6 @@ int solution(string numbers) {
         nums.push_back(numbers[i] - '0');
     }
     sort(nums.begin(), nums.end());
-    
     
     // 조합 생성
     vector<string> quest;
@@ -83,10 +80,19 @@ int solution(string numbers) {
         multi(quest.at(i), &set);
     }
     
-    return primArray(&set);
+    vector<bool> array = primArray(&set);
+    
+    int count = 0;
+    for(int a : set){
+        if(!array[a]){
+            count++;
+        }
+    }
+    
+    return count;
 }
 
-int primArray(unordered_set<int> *set){
+vector<bool> primArray(unordered_set<int> *set){
     int max = -1;
     for(int i : *set){
         if(max < i){
@@ -97,19 +103,18 @@ int primArray(unordered_set<int> *set){
     vector<bool> array(max+1);
     array.assign(0, true); // false이면 소수임
     
-    int count =0;
-    int i = 1;
+    int i = 2;
     while(i <= max){
         int index = i + i;
         if(!array[i]){
-            count++;
             while(index <= max){
                 array[index] = true;
                 index = index + i;
             }
         }
+        i++;
     }
     
-    return count;
+    return array;
 }
 

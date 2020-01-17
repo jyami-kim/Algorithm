@@ -1,40 +1,64 @@
 package com.jyami.programmers.completeSearch;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Created by jyami on 2020/01/15
+ * 소수찾기
+ * https://programmers.co.kr/learn/courses/30/lessons/42839?language=java
  */
 public class FindingPrimeNumber {
 
     public static void main(String[] args) {
-        String numbers = "17";
+        String numbers = "001";
         System.out.println(new Solution().solution(numbers));
     }
 
     static class Solution {
         public int solution(String numbers) {
             char[] chars = numbers.toCharArray();
-            Set<Integer> set = new HashSet<>();
-            for (int r = 1; r <= chars.length; r++) { // 사용할 숫자의 개수
-                boolean[] visited = new boolean[chars.length];
-                combination(visited, 0, chars.length, r, set, chars);
+            Arrays.sort(chars);
+            int[] integers = new int[10];
+            StringBuilder maxNumString = new StringBuilder();
+            for(int i=chars.length-1; i>=0; i--){
+                integers[chars[i]-'0'] += 1;
+                maxNumString.append(chars[i] - '0');
             }
-            List<Integer> collect = set.stream().sorted().collect(Collectors.toList());
-            Integer max = collect.get(collect.size() - 1);
-            boolean[] notPrim = primCount(new boolean[max+1]);
+            int maxNumber = Integer.parseInt(maxNumString.toString());
 
-            int count = 0;
-            for(int a : collect){
-                if(!notPrim[a])
-                    count++;
+            if(maxNumber == 0){
+                return 0;
             }
+
+            boolean[] notPrime = primCount(maxNumber);
+            int count = 0;
+
+            for(int i =0; i<maxNumber+1; i++){
+                if(!notPrime[i] && haveSameNumbers(integers, String.valueOf(i))){
+                    count++;
+                }
+            }
+
             return count;
         }
 
-        public boolean[] primCount(boolean[] notPrime){
+        public boolean haveSameNumbers(int[] corrects, String primeNumber){
+            int[] numbers = new int[10];
+            for(char c : primeNumber.toCharArray()){
+                numbers[c-'0'] += 1;
+            }
+            for(int i =0; i<numbers.length; i++){
+                if(numbers[i] > corrects[i])
+                    return false;
+            }
+            System.out.println(primeNumber);
+            return true;
+        }
+
+        public boolean[] primCount(int maxNumber){
+            boolean[] notPrime = new boolean[maxNumber + 1];
             notPrime[0] = true;
+            notPrime[1] = true;
             int index = 2;
             while(index < notPrime.length){
                 if(!notPrime[index]){
@@ -47,33 +71,7 @@ public class FindingPrimeNumber {
                 index++;
             }
             return notPrime;
-        }
 
-
-        public int makeNumber(boolean[] comb, char[] chars){
-            StringBuilder result = new StringBuilder();
-            for(int i =0; i<chars.length; i++){
-                if(comb[i]){
-                    result.append(chars[i]);
-                }
-            }
-            String answer = result.toString();
-            if(answer.equals("")){
-                return 0;
-            }
-            return Integer.parseInt(answer);
-        }
-
-        public void combination(boolean[] visited, int start, int n, int r, Set<Integer> result, char[]chars){
-            if(r==0){
-                result.add(makeNumber(visited, chars));
-            }else{
-                for(int i=start; i<n; i++){
-                    visited[i] = true;
-                    combination(visited, i+1, n, r-1, result, chars);
-                    visited[i] = false;
-                }
-            }
         }
     }
 }
