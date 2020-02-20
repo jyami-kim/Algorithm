@@ -2,34 +2,40 @@ package hashCode;
 
 import java.io.*;
 import java.util.Arrays;
-import java.util.Comparator;
 
 
 /**
  * Created by jyami on 2020/02/21
  */
-public class HashCode_A {
+public class HashCode {
 
     public static BufferedReader br;
+    public static PrintWriter outStream;
 
     public static void main(String[] args) throws IOException {
-        InputStream in = new FileInputStream(new File("src/hashCode/data/a_example.txt"));
+        InputStream in = new FileInputStream(new File("src/hashCode/data/c_incunabula.txt"));
 //        OutputStream out = new FileOutputStream("../output/a_example.txt");
         br = new BufferedReader(new InputStreamReader(in));
+        outStream=new PrintWriter("src/hashCode/output/c_incunabula.txt");
 
         BasicInfo basicInfo = new BasicInfo();
-
         Library[] librariesArray = new Library[basicInfo.libraries];
-
         for(int i=0; i<basicInfo.libraries; i++){
             librariesArray[i] = new Library(i);
         }
 
-        makeSolution(librariesArray, basicInfo);
+        int lIndex = makeSolution(librariesArray, basicInfo);
+
+        outStream.println(lIndex);
+        for(int i =0 ; i<lIndex; i++){
+            outStream.println(librariesArray[i].index + " " + librariesArray[i].getInputBooks());
+            outStream.println(librariesArray[i].getBooksResult());
+        }
+        outStream.close();
 
     }
 
-    private static void makeSolution(Library[] libraries, BasicInfo basicInfo){
+    private static int makeSolution(Library[] libraries, BasicInfo basicInfo){
 
         Arrays.sort(libraries, (o1, o2) -> Integer.compare(o2.ship, o1.ship));
 
@@ -40,7 +46,7 @@ public class HashCode_A {
 
         for(int d = 0; d < basicInfo.days; d++){
             if(lIndex >= basicInfo.libraries){
-                break;
+                return lIndex;
             }
             int signup = libraries[lIndex].signup;
 
@@ -54,7 +60,7 @@ public class HashCode_A {
 
             for(int l =0; l < lIndex; l++){
                 for(int s =0; s < libraries[l].ship; s++){
-                    int libraryBookIndex = libraries[l].libraryBookIndex;
+                    int libraryBookIndex = libraries[l].getLibraryBookIndex(basicInfo);
                     if(libraryBookIndex >= libraries[l].books.length){
                         continue;
                     }
@@ -65,19 +71,11 @@ public class HashCode_A {
                         score += basicInfo.bookScore[libraryBookIndex];
                         basicInfo.setValidateBookTrue(libraryBookIndex);
                     }
-                    libraries[l].libraryBookIndex += 1;
                 }
             }
 
         }
-
-        System.out.println(lIndex);
-        for(Library l : libraries){
-            System.out.println(l.index + " " + l.getInputBooks());
-            System.out.println(l.getBooksResult());
-        }
-
-        System.out.println("score" + score);
+        return lIndex;
     }
 
     private static int[] makeIntegerArray(String[] stringArray){
@@ -135,12 +133,13 @@ public class HashCode_A {
             this.inputBooks[index] = true;
         }
 
-//        public void libraryBookIndexUpdate(BasicInfo basicInfo){
-//            int basicIndex = books[libraryBookIndex];
-//            if(basicInfo.validateBook[basicIndex])
-//            this.libraryBookIndex
-//        }
-//
+        public int getLibraryBookIndex(BasicInfo basicInfo){
+            while(libraryBookIndex < books.length && basicInfo.validateBook[books[libraryBookIndex]]){
+                libraryBookIndex++;
+            }
+            return libraryBookIndex;
+        }
+
         public String getBooksResult(){
             StringBuilder stringBuilder = new StringBuilder();
             for(int i = 0; i<books.length; i++){
