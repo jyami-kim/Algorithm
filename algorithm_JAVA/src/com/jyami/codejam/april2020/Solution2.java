@@ -3,8 +3,6 @@ package com.jyami.codejam.april2020;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -31,7 +29,6 @@ public class Solution2 {
         StringBuilder sb = new StringBuilder();
         Stack<String> stacks = new Stack<>();
         char[] chars = str.toCharArray();
-        boolean isUp = true;
         int init = chars[0] - '0';
         stackPushTo(stacks, init);
         sb.append(bracket[init].open).append(init);
@@ -40,18 +37,9 @@ public class Solution2 {
             if(now < stacks.size()){
                 sb.append(bracket[stacks.size()-now].close).append(now);
                 stackPopTo(stacks, now);
-                isUp = false;
             }else{
-                if(!isUp){
-                    sb.append(bracket[stacks.size()].close);
-                    stacks.clear();
-                    sb.append(bracket[now].open).append(now);
-                    stackPushTo(stacks, now);
-                }else{
-                    sb.append(bracket[now-stacks.size()].open).append(now);
-                    stackPushTo(stacks, now);
-                }
-                isUp = true;
+                sb.append(bracket[now-stacks.size()].open).append(now);
+                stackPushTo(stacks, now);
             }
         }
         sb.append(bracket[stacks.size()].close);
