@@ -1,4 +1,4 @@
-package com.jyami.leetCode;
+package com.jyami.leetCode.week1;
 
 import java.util.HashSet;
 import java.util.Set;
