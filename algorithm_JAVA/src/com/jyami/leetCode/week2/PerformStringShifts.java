@@ -11,8 +11,9 @@ public class PerformStringShifts {
 
         String s = "abcdefg";
 //        String s = "abc";
+        int[][] shift = {{1, 1}}; // l로 1번 이동.
 //        int[][] shift = {{0,1},{1,2}};
-        int[][] shift = {{1, 1}, {1, 1}, {0, 2}, {1, 3}};
+//        int[][] shift = {{1, 1}, {1, 1}, {0, 2}, {1, 3}};
 //        int[][] shift = {{0,3}};
 //
 //        System.out.println(s.substring(1));
@@ -27,17 +28,24 @@ public class PerformStringShifts {
         int l = 0;
         int sum = 0;
         for (int i = 0; i < shift.length; i++) {
-            if(i == l){
+            if (i == l) {
                 sum -= shift[i][1];
-            }else{
+            } else {
                 sum += shift[i][1];
             }
         }
-        if(sum > 0){ // r
-            return s.substring(s.length()-sum-1) + s.substring(0, sum) ;
-        }else{ // l
+        String left;
+        String right;
+        if (sum > 0) { // r
+            left = s.substring(s.length() - sum);
+            right = s.substring(0, sum + 1);
+        } else { // l
             sum = -sum;
-            return s.substring(sum) + s.substring(0, sum);
+            left = s.substring(sum);
+            right = s.substring(0, sum);
         }
+        System.out.println(left);
+        System.out.println(right);
+        return left + right;
     }
 }
