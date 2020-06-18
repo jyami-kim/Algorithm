@@ -3,8 +3,6 @@ package com.jyami.leetCode.problem;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import javax.swing.*;
-
 /**
  * Created by jyami on 2020/06/17
  */
@@ -20,12 +18,15 @@ public class Solution11 {
             if (checkMinus(c, nextChar)) {
                 result = result + getInt(nextChar) - anInt;
                 i++;
+            }else{
+                result = result + anInt;
             }
-            result = result + anInt;
         }
-
-        int anInt = getInt(s.charAt(s.length() - 1));
-        return result + anInt;
+        if(i != s.length()){
+            int anInt = getInt(s.charAt(s.length() - 1));
+            return result + anInt;
+        }
+        return result;
     }
 
     public static boolean checkMinus(char c, char next) {
