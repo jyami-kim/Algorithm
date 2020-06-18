@@ -1,4 +1,4 @@
-package com.jyami.leetCode.week3;
+package com.jyami.leetCode.weekly;
 
 import java.util.Arrays;
 

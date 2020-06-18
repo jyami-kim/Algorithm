@@ -1,4 +1,4 @@
-package com.jyami.leetCode.week1;
+package com.jyami.leetCode.weekly;
 
 /**
  * Created by jyami on 2020/04/08

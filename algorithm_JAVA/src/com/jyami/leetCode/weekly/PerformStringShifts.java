@@ -1,6 +1,4 @@
-package com.jyami.leetCode.week2;
-
-import java.util.Arrays;
+package com.jyami.leetCode.weekly;
 
 /**
  * Created by jyami on 2020/04/15
