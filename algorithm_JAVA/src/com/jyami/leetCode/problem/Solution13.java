@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 /**
  * Created by jyami on 2020/06/17
  */
-public class Solution11 {
+public class Solution13 {
 
     public int romanToInt(String s) {
         int result = 0;
