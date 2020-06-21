@@ -7,57 +7,41 @@ import org.junit.jupiter.api.Test;
  */
 public class Solution2 {
 
-    static int carry = 0;
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head = new ListNode();
-        boolean first = true;
-        ListNode prevNode = new ListNode();
+        int carry = 0;
+
+        ListNode h = new ListNode();
+        ListNode node = h;
         while (l1 != null || l2 != null) {
-            ListNode nowNode = new ListNode();
-            int result = 0;
+            int n1 = l1 != null ? l1.val : 0;
+            int n2 = l2 != null ? l2.val : 0;
+            int val = n1 + n2 + carry;
+            carry = val / 10;
+            node.next = new ListNode(val % 10);
             if (l1 != null && l2 != null) {
-                result = addValue(l1.val, l2.val);
                 l1 = l1.next;
                 l2 = l2.next;
             } else if (l1 == null) {
-                result = addValue(l2.val, 0);
                 l2 = l2.next;
             } else {
-                result = addValue(l1.val, 0);
                 l1 = l1.next;
             }
-            nowNode.val = result;
-            prevNode.next = nowNode;
-            prevNode = nowNode;
-            if(first){
-                head = nowNode;
-                first = false;
-            }
+            node = node.next;
         }
         if(carry == 1){
-            prevNode.next = new ListNode(1);
+            node.next = new ListNode(1);
         }
-        return head;
-    }
-
-    public static int addValue(int val1, int val2) {
-        int result = val1 + val2 + carry;
-        if (result / 10 == 0){
-            carry = 0;
-        }else{
-            carry = 1;
-        }
-        return result % 10;
+        return h.next;
     }
 
     @Test
-    void addTwoNumbers(){
+    void addTwoNumbers() {
         ListNode l1 = new ListNode(9);
         ListNode l2 = new ListNode(9);
         ListNode listNode = addTwoNumbers(l1, l2);
 
     }
+
     class ListNode {
         int val;
         ListNode next;
