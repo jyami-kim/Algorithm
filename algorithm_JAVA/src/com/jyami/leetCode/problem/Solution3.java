@@ -10,18 +10,42 @@ import java.util.Set;
  */
 public class Solution3 {
     public int lengthOfLongestSubstring(String s) {
-        byte[] bytes = s.getBytes();
-        int[] numbers = new int[bytes.length];
-        Set<Byte> set = new HashSet<>();
-        for(byte b : bytes){
-            
+        if (s.length() < 1) {
+            return 0;
         }
-        return 0;
+        int result = 1;
+        byte[] bytes = s.getBytes();
+        for (int i = 2; i <= s.length(); i++) {
+            if (calculate(i, bytes)) {
+                result = i;
+            }
+        }
+        return result;
+    }
+
+    public boolean calculate(int window, byte[] bytes) {
+        int len = bytes.length;
+        Set<Byte> set = new HashSet<>();
+        for (int i = 0; i < len - window; i++) {
+            set.clear();
+            for (int j = i; j < i + window; j++) {
+                if (!set.contains(bytes[j])) {
+                    set.add(bytes[j]);
+                    if (j == i + window - 1) {
+                        return true;
+                    }
+                } else {
+                    break;
+                }
+            }
+        }
+        return false;
     }
 
     @Test
-    void lengthOfLongestSubstring() {
-
+    void lengthOfLongestSubstringTest() {
+        int abcabc = lengthOfLongestSubstring("pwwkew");
+        System.out.println(abcabc);
 
     }
 }
