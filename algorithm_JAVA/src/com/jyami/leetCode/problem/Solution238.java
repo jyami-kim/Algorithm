@@ -1,14 +1,14 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import java.util.Arrays;
 
 /**
  * Created by jyami on 2020/04/15
  */
-public class ProductOfArrayExceptSelf {
+public class Solution238 {
     public static void main(String[] args) {
         int[] nums = {9,0,-2};
-        int[] ints = new ProductOfArrayExceptSelf().productExceptSelf(nums);
+        int[] ints = new Solution238().productExceptSelf(nums);
         System.out.println(Arrays.toString(ints));
     }
 

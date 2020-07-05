@@ -1,11 +1,9 @@
-package com.jyami.leetCode.test;
-
-import org.junit.jupiter.api.Test;
+package com.jyami.leetCode.problem;
 
 /**
  * Created by jyami on 2020/06/28
  */
-public class CheckRecord {
+public class Solution551 {
     public boolean checkRecord(String s) {
         int a = 0;
         int l = 0;

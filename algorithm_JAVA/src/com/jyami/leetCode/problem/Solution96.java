@@ -1,11 +1,11 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/06/24
  */
-public class Solution0624 {
+public class Solution96 {
 
     public int numTrees(int n) {
         int[] arr = new int[n + 1];

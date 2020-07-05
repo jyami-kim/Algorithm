@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,9 +6,9 @@ import java.util.Set;
 /**
  * Created by jyami on 2020/04/08
  */
-public class HappyNumber {
+public class Solution202 {
     public static void main(String[] args) {
-        boolean happy = new HappyNumber().isHappy(19);
+        boolean happy = new Solution202().isHappy(19);
         System.out.println(happy);
     }
 

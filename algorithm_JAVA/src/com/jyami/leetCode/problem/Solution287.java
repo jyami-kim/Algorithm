@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * Created by jyami on 2020/06/25
  */
-public class Solution0625 {
+public class Solution287 {
     public int findDuplicate(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i++) {

@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 /**
  * Created by jyami on 2020/06/28
  */
-public class Solution0627 {
+public class Solution279 {
     public int numSquares(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 0;

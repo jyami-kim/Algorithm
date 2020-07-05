@@ -1,11 +1,11 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/06/26
  */
-public class Solution0626 {
+public class Solution129 {
 
     public int sumNumbers(TreeNode root) {
         if(root == null)

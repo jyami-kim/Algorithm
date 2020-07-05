@@ -1,9 +1,9 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.notSolved;
 
 /**
  * Created by jyami on 2020/04/15
  */
-public class PerformStringShifts {
+public class Solution1427 {
 
     public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class PerformStringShifts {
 //        System.out.println(s.substring(0, 1));
 //        System.out.println(s.substring(0, 2));
 
-        String s1 = new PerformStringShifts().stringShift(s, shift);
+        String s1 = new Solution1427().stringShift(s, shift);
         System.out.println(s1);
     }
 

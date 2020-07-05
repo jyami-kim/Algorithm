@@ -1,4 +1,4 @@
-package com.jyami.leetCode.test;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Created by jyami on 2020/06/29
  */
-public class NetworkDelayTime {
+public class Solution743 {
 
     public int networkDelayTime(int[][] times, int N, int K) {
         int start = K - 1;

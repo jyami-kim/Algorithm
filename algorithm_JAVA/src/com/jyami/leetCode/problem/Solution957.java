@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by jyami on 2020/07/04
  */
-public class Solution0703 {
+public class Solution957 {
 
     static int diff = 14;
 

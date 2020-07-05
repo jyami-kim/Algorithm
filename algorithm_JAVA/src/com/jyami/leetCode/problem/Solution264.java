@@ -1,11 +1,11 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/07/05
  */
-public class Solution0704 {
+public class Solution264 {
     public int nthUglyNumber(int n) {
 
         int[] dp = new int[n];

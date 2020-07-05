@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.notSolved;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * Created by jyami on 2020/06/28
  */
-public class Solution0628 {
+public class Solution332 {
     public List<String> findItinerary(List<List<String>> tickets) {
 
         List<List<String>> list = findList(tickets);

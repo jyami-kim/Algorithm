@@ -1,11 +1,11 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/06/29
  */
-public class Solution0629 {
+public class Solution62 {
     public int uniquePaths(int m, int n) {
         int[][] map = new int[m][n];
         for (int i = 0; i < m; i++) {

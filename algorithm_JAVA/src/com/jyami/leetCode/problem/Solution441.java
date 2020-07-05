@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 /**
  * Created by jyami on 2020/07/01
  */
-public class Solution0701 {
+public class Solution441 {
     public int arrangeCoins(int n) {
         long temp = 0;
         int increase = 1;

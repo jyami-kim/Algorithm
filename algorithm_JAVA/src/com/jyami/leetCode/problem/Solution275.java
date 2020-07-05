@@ -1,18 +1,13 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
-import com.sun.tools.javac.util.ArrayUtils;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-
-import static java.util.Comparator.reverseOrder;
 
 /**
  * Created by jyami on 2020/06/18
  */
-public class Solution0618 {
+public class Solution275 {
     public int hIndex(int[] citations) {
         Arrays.sort(citations);
 

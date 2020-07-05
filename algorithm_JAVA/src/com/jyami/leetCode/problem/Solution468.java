@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 /**
  * Created by jyami on 2020/06/17
  */
-public class Solution0616 {
+public class Solution468 {
 
 
     static final String chunkIPv4 = "([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])";

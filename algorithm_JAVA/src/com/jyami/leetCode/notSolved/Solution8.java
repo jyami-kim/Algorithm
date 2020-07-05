@@ -1,4 +1,4 @@
-package com.jyami.leetCode.problem;
+package com.jyami.leetCode.notSolved;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

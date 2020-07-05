@@ -1,12 +1,12 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.notSolved;
 
 /**
  * Created by jyami on 2020/04/08
  */
-public class MaxSubArray {
+public class Solution53 {
     public static void main(String[] args) {
         int[] a= {-2,1,-3,4,-1,2,1,-5,4};
-        new MaxSubArray().maxSubArray(a);
+        new Solution53().maxSubArray(a);
     }
 
     public int maxSubArray(int[] nums) {

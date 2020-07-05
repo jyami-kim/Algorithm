@@ -1,4 +1,4 @@
-package com.jyami.leetCode.weekly;
+package com.jyami.leetCode.problem;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Created by jyami on 2020/07/02
  */
-public class Solution0702 {
+public class Solution107 {
 
     static class Node {
         int depth;
