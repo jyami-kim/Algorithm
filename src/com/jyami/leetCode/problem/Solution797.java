@@ -15,28 +15,20 @@ public class Solution797 {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         list = new ArrayList<>();
         int now = 0;
-        boolean[] visited = new boolean[graph.length];
         List<Integer> nowList = new ArrayList<>();
-        dfs(graph, visited, now, nowList);
+        dfs(graph, now, nowList);
         return list;
     }
 
-    public void dfs(int[][] graph, boolean[] visited, int now, List<Integer> nowList) {
+    public void dfs(int[][] graph, int now, List<Integer> nowList) {
         System.out.println(now);
-        visited[now] = true;
         nowList.add(now);
-        boolean isMiddle = false;
+        if (graph[now].length == 0) {
+            list.add(nowList);
+        }
         for (int other : graph[now]) {
-            if (!visited[other]) {
-                isMiddle = true;
-                dfs(graph, visited, other, nowList);
-            }
+            dfs(graph, other, new ArrayList<>(nowList));
         }
-        if (!isMiddle) {
-            list.add(new ArrayList<>(nowList));
-        }
-        visited[now] = false;
-        nowList.remove(Integer.valueOf(now));
     }
 
     @Test
