@@ -4,10 +4,7 @@ package com.jyami.leetCode.problem;
 import org.junit.jupiter.api.Test;
 import sun.jvm.hotspot.utilities.ObjectReader;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * Created by jyami on 2020/08/05
@@ -15,42 +12,10 @@ import java.util.stream.Collectors;
 public class Solution211 {
 }
 
-class TrieNode {
-    private TrieNode[] link;
+/**
+ * 제출시 아래 TrieNode를 선언한 코드도 같이 넣어야한다.
+ */
 
-    private boolean isEnd;
-
-    public TrieNode() {
-        this.link = new TrieNode[26];
-    }
-
-    public TrieNode get(char c) {
-        return link[c - 'a'];
-    }
-
-    public void put(char c, TrieNode node) {
-        link[c - 'a'] = node;
-    }
-
-    public boolean isEnd() {
-        return isEnd;
-    }
-
-    public void setEnd() {
-        isEnd = true;
-    }
-
-    public boolean containsKey(char ch) {
-        return link[ch - 'a'] != null;
-    }
-
-    public List<TrieNode> getList() {
-        return Arrays.stream(link)
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
-    }
-
-}
 
 class WordDictionary {
 
@@ -116,14 +81,14 @@ class WordDictionary {
     void pattern() {
         //["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
         //[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
-//        WordDictionary wordDictionary = new WordDictionary();
-//        wordDictionary.addWord("bad");
-//        wordDictionary.addWord("dad");
-//        wordDictionary.addWord("mad");
-//        System.out.println(wordDictionary.search("pad"));
-//        System.out.println(wordDictionary.search("bad"));
-//        System.out.println(wordDictionary.search(".ad"));
-//        System.out.println(wordDictionary.search("b.."));
+        WordDictionary wordDictionary = new WordDictionary();
+        wordDictionary.addWord("bad");
+        wordDictionary.addWord("dad");
+        wordDictionary.addWord("mad");
+        System.out.println(wordDictionary.search("pad"));
+        System.out.println(wordDictionary.search("bad"));
+        System.out.println(wordDictionary.search(".ad"));
+        System.out.println(wordDictionary.search("b.."));
 
         // ["WordDictionary","addWord","addWord","search","search","search","search","search","search"]
         //[[],["a"],["a"],["."],["a"],["aa"],["a"],[".a"],["a."]]
