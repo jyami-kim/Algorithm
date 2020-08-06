@@ -14,7 +14,7 @@
   
 - **킥스타트** : 킥스타트 소스코드입니다
   
-  소스 폴더 보기](./src/com/jyami/kickstart)
+  [소스 폴더 보기](./src/com/jyami/kickstart)
   
 - **프로그래머스** : 프로그래머스 문제를 해결한 소스코드 입니다.
   
@@ -24,6 +24,6 @@
   
   백준 알고리즘 번호에 따라 Solution\[번호] 규칙으로 정렬
   
-  [소스 폴더 보기](./src/com/jyami/programmers)
+  [소스 폴더 보기](./src/com/jyami/leetCode)
 
 .
