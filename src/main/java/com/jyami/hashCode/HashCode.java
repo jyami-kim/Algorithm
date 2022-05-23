@@ -1,4 +1,4 @@
-package hashCode;
+package com.jyami.hashCode;
 
 import java.io.*;
 import java.util.Arrays;
@@ -13,10 +13,10 @@ public class HashCode {
     public static PrintWriter outStream;
 
     public static void main(String[] args) throws IOException {
-        InputStream in = new FileInputStream(new File("src/hashCode/data/c_incunabula.txt"));
+        InputStream in = new FileInputStream(new File("src/com.jyami.hashCode/data/c_incunabula.txt"));
 //        OutputStream out = new FileOutputStream("../output/a_example.txt");
         br = new BufferedReader(new InputStreamReader(in));
-        outStream=new PrintWriter("src/hashCode/output/c_incunabula.txt");
+        outStream=new PrintWriter("src/com.jyami.hashCode/output/c_incunabula.txt");
 
         BasicInfo basicInfo = new BasicInfo();
         Library[] librariesArray = new Library[basicInfo.libraries];
