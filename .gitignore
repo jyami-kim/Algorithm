@@ -1,5 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 
+.gradle
+build
+
 ## mac
 .DS_Store
 
