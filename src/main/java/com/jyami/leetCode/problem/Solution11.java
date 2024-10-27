@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/26
  */
@@ -19,10 +17,4 @@ public class Solution11 {
         return max;
     }
 
-    @Test
-    void maxAreaTest() {
-        int[] height = {1,2};
-        int i = maxArea(height);
-        System.out.println(i);
-    }
 }

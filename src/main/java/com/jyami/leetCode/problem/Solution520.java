@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 import java.util.function.Predicate;
 
 /**
@@ -33,11 +30,4 @@ public class Solution520 {
         return true;
     }
 
-
-    @ParameterizedTest
-    @ValueSource(strings = {"A","Ba","bA","GloBal", "USA", "letter"})
-    void detectCapitalUseTest(String str) {
-        boolean b = detectCapitalUse(str);
-        System.out.println(b);
-    }
 }

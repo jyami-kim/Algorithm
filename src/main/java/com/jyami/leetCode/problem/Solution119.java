@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +16,5 @@ public class Solution119 {
             }
         }
         return list;
-    }
-
-    @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3, 4, 5, 6})
-    void getRowTest(int i) {
-        System.out.println(getRow(i));
     }
 }

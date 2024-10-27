@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 /**
  * Created by jyami on 2020/06/28
  */
@@ -24,11 +21,5 @@ public class Solution279 {
         return dp[n];
     }
 
-
-    @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3, 4, 5, 6, 7, 8, 9})
-    void numSquaresTest(int i) {
-        System.out.println("num : " + i + " => " + numSquares(i));
-    }
 
 }

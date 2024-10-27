@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,10 +24,4 @@ public class Solution260 {
         return array;
     }
 
-    @Test
-    void singleNumberTest() {
-        int[] array = {1, 1, 2, 2, 3, 4, 5};
-        int[] ints = singleNumber(array);
-        System.out.println(Arrays.toString(ints));
-    }
 }

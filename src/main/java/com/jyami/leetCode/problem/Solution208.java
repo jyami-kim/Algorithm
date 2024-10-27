@@ -1,6 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/08/05
@@ -69,17 +68,5 @@ public class Solution208 {
             return true;
         }
     }
-
-    @Test
-    void trie() {
-        // ["Trie","insert","search","search","startsWith","insert","search"]
-        //[[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
-        Trie trie = new Trie();
-        trie.insert("apple");
-        System.out.println(trie.search("apple"));
-        System.out.println(trie.search("app"));
-        System.out.println(trie.startsWith("app"));
-    }
-
 
 }

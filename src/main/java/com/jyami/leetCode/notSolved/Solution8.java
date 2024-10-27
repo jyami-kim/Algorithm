@@ -1,8 +1,5 @@
 package com.jyami.leetCode.notSolved;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,12 +23,6 @@ public class Solution8 {
                 return (int) l;
         }
         return 0;
-    }
-
-    @ParameterizedTest
-    @ValueSource(strings = {".1","   -42", "4193 with words", "words and 987", "-91283472332"})
-    void myAtoiTest(String str) {
-        System.out.println(myAtoi(str));
     }
 }
 

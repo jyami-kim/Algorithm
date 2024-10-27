@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 /**
  * Created by jyami on 2020/06/17
  */
@@ -56,11 +53,5 @@ public class Solution13 {
                 return 1000;
         }
         return 0;
-    }
-
-    @ParameterizedTest
-    @ValueSource(strings = {"III", "IV", "IX", "LVIII", "MCMXCIV"})
-    void romanToIntTest(String value) {
-        System.out.println(romanToInt(value));
     }
 }

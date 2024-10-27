@@ -1,7 +1,5 @@
 package com.jyami.exam.programmers;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,11 +37,11 @@ public class NBPSolution1 {
         return false;
     }
 
-    @Test
-    public void solution() {
+
+    public static void main(String[] args) {
         int[] arrA = {4, 3, 4, 1};
         int[] arrB = {4, 1, 4, 3};
-        boolean solution = solution(arrA, arrB);
+        boolean solution = new NBPSolution1().solution(arrA, arrB);
         System.out.println(solution);
     }
 

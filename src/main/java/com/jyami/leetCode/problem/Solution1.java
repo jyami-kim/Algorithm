@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 
 /**
@@ -20,13 +18,14 @@ public class Solution1 {
         throw new IllegalArgumentException("No two sum solution");
     }
 
-    @Test
-    void twoSum() {
+    public static void main(String[] args) {
         int[] nums = {2,7,11,15};
         int target = 9;
 
-        int[] solution = twoSum(nums, target);
+        int[] solution = new Solution1().twoSum(nums, target);
         System.out.println(Arrays.toString(solution));
-
     }
+
+
+
 }

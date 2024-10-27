@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 /**
@@ -27,11 +25,10 @@ public class Solution347 {
         return result;
     }
 
-    @Test
-    void topKFrequent(){
+    public static void main(String[] args) {
         int[] nums = {1,2,2};
         int k = 1;
-        int[] ints = topKFrequent(nums, k);
+        int[] ints = new Solution347().topKFrequent(nums, k);
         System.out.println(Arrays.toString(ints));
     }
 }

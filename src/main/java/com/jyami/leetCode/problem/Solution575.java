@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 
 /**
@@ -24,9 +22,8 @@ public class Solution575 {
         return nowPeople;
     }
 
-    @Test
-    void distributeCandiesTest() {
-        System.out.println(Arrays.toString(distributeCandies(10, 3)));
 
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Solution575().distributeCandies(10, 3)));
     }
 }

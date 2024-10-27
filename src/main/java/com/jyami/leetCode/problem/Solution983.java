@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -38,10 +36,10 @@ public class Solution983 {
         return answer;
     }
 
-    @Test
-    void mincostTicketsTest(){
+    public static void main(String[] args) {
         int[] days = {1,4,6,7,8,20};
         int[] costs = {2,7,15};
-        System.out.println(mincostTickets(days, costs));
+        System.out.println(new Solution983().mincostTickets(days, costs));
     }
+
 }

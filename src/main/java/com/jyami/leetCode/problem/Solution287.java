@@ -1,6 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -16,11 +15,5 @@ public class Solution287 {
             }
         }
         return 0;
-    }
-
-    @Test
-    void findDuplicateTest() {
-        int duplicate = findDuplicate(new int[]{1, 2, 3, 4, 4});
-        System.out.println(duplicate);
     }
 }

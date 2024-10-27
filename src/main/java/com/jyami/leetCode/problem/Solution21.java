@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/18
  */
@@ -32,19 +30,6 @@ public class Solution21 {
             }
         }
         return head.next;
-    }
-
-
-    @Test
-    void mergeTwoListsTest(){
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(4);
-
-        ListNode l2 = new ListNode(1);
-        l2.next = new ListNode(3);
-        l2.next.next = new ListNode(4);
-        ListNode listNode = mergeTwoLists(l1, l2);
     }
 
 

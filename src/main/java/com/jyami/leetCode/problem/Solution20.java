@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Stack;
 
@@ -36,10 +34,5 @@ public class Solution20 {
         if(stack.size() != 0)
             return false;
         return true;
-    }
-    @ParameterizedTest
-    @ValueSource(strings = {"]","()","{}[]()","([)]", "{[]}"})
-    void isValidTest(String strings){
-        System.out.println(isValid(strings));
     }
 }

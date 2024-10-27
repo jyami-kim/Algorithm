@@ -1,7 +1,5 @@
 package com.jyami.exam.hackerRank;
 
-import org.junit.jupiter.api.Test;
-
 
 /**
  * Created by jyami on 2020/06/29
@@ -33,12 +31,9 @@ public class KakaoResult1 {
         return Math.min(rightDistance, leftDistance);
     }
 
-    @Test
-    void solutionTest() {
-
+    public static void main(String[] args) {
         long bza = solution("AZGB");
         System.out.println(bza);
     }
-
 
 }

@@ -1,7 +1,5 @@
 package com.jyami.exam.programmers;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -27,9 +25,8 @@ public class NBPSolution3 {
         return sum - max;
     }
 
-    @Test
-    void solutionTest() {
+    public static void main(String[] args) {
         int[] arr = {103,101,103,103,101,102,100,100,101,104};
-        System.out.println(solution(arr));
+        System.out.println(new NBPSolution3().solution(arr));
     }
 }

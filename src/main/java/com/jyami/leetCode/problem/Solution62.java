@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/29
  */
@@ -20,11 +18,5 @@ public class Solution62 {
             }
         }
         return map[m-1][n-1];
-    }
-
-    @Test
-    void uniquePathsTest(){
-        int i = uniquePaths(7,3);
-        System.out.println(i);
     }
 }

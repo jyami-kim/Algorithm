@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 /**
  * Created by jyami on 2020/07/16
@@ -17,13 +15,5 @@ public class Solution151 {
         }
         sb.append(strings[0]);
         return sb.toString();
-    }
-
-
-    @ParameterizedTest
-    @ValueSource(strings = {"", "the sky is blue", "  hello world!  ", "a good   example"})
-    void reverseWordsTest(String string) {
-        String s = reverseWords(string);
-        System.out.println(s);
     }
 }

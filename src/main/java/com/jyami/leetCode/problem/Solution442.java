@@ -1,6 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +20,9 @@ public class Solution442 {
         return list;
     }
 
-    @Test
-    void findDuplicatesTest(){
+
+    public static void main(String[] args) {
         int[] nums = {4,3,2,7,8,2,3,1};
-        System.out.println(findDuplicates(nums));
+        System.out.println(new Solution442().findDuplicates(nums));
     }
 }

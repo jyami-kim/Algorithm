@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,8 +9,8 @@ import java.util.Queue;
  * Created by jyami on 2020/08/13
  */
 public class Solution1286 {
-    @Test
-    void combinationIteratorTest() {
+
+    public static void main(String[] args) {
         CombinationIterator abc = new CombinationIterator("abc", 2);
         System.out.println(abc.next());
         System.out.println(abc.hasNext());

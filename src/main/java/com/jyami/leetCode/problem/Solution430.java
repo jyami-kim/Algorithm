@@ -1,13 +1,11 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/11
  */
 public class Solution430 {
 
-    class Node {
+    static class Node {
         public int val;
         public Node prev;
         public Node next;
@@ -57,9 +55,8 @@ public class Solution430 {
         return head;
     }
 
-    @Test
-    void flattenTest() {
-//        Node node1 = new Node(1, null, null, null);
+    public static void main(String[] args) {
+        //        Node node1 = new Node(1, null, null, null);
 //        Node node2 = new Node(2, node1, null, null);
 //        node1.next = node2;
 //        Node node3 = new Node(3, node2, null, null);
@@ -90,6 +87,7 @@ public class Solution430 {
         Node node2 = new Node(2, null, null, node3);
         Node node1 = new Node(1, null, null, node2);
 
-        Node flatten = flatten(node1);
+        Node flatten = new Solution430().flatten(node1);
     }
+
 }

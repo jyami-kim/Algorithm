@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,10 +27,10 @@ public class Solution621 {
         return Math.max(tasks.length, max);
     }
 
-    @Test
-    void leastIntervalTest(){
+    public static void main(String[] args) {
         char[] tasks = {'a','a','a','b','b','b'};
 //        char[] tasks = {'a','a','a','a','a','a','b','c','d','e','f','g'};
-        System.out.println(leastInterval(tasks, 1));
+        System.out.println(new Solution621().leastInterval(tasks, 1));
     }
+
 }

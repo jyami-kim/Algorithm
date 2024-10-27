@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 /**
@@ -46,15 +44,6 @@ public class Solution107 {
         Collections.reverse(result);
 
         return result;
-    }
-
-    @Test
-    void levelOrderBottom() {
-//        TreeNode root = new TreeNode(3);
-        TreeNode root = new TreeNode(1, new TreeNode(2, new TreeNode(3, new TreeNode(4, new TreeNode(5), null), null), null), null);
-
-        List<List<Integer>> lists = levelOrderBottom(root);
-        System.out.println(lists);
     }
 
 

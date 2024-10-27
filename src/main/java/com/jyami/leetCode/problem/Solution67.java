@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/20
  */
@@ -37,10 +35,5 @@ public class Solution67 {
         return sb.toString();
     }
 
-    @Test
-    void addBinaryTest() {
-        String a = "1010";
-        String b = "1011";
-        System.out.println(addBinary(a, b));
-    }
+
 }

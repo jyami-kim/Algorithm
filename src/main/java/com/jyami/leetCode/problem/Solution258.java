@@ -1,6 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
 
 /**
  * Created by jyami on 2020/07/26
@@ -18,9 +17,5 @@ public class Solution258 {
         }
         return num;
     }
-    @Test
-    void addDigitsTest(){
-        int i = addDigits(38);
-        System.out.println(i);
-    }
+
 }

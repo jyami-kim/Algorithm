@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/25
  */
@@ -33,9 +31,4 @@ public class Solution6 {
         return sb.toString();
     }
 
-    @Test
-    public void convertTest() {
-        String paypalishiring = convert("1", 3);
-        System.out.println(paypalishiring);
-    }
 }

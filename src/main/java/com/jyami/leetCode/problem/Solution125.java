@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 /**
  * Created by jyami on 2020/08/04
@@ -29,9 +27,4 @@ public class Solution125 {
         return true;
     }
 
-    @ParameterizedTest()
-    @ValueSource(strings = {"0P","", "A man, a plan, a canal: Panama", "race a car"})
-    void isPalindromeTest(String str) {
-        System.out.println(isPalindrome(str));
-    }
 }

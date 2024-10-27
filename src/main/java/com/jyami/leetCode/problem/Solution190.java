@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/13
  */
@@ -19,9 +17,4 @@ public class Solution190 {
         return result;
     }
 
-    @Test
-    void reverseBitsTest() {
-        int i = reverseBits(43261596);
-        System.out.println(i);
-    }
 }

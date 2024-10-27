@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/08
  */
@@ -39,12 +37,11 @@ public class Solution463 {
         return sum;
     }
 
-    @Test
-    void islandPerimeterTest() {
-//        int[][] arr = {{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 1, 0, 0}, {1, 1, 0, 0}};
+    public static void main(String[] args) {
+        //        int[][] arr = {{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 1, 0, 0}, {1, 1, 0, 0}};
         int[][] arr = {{1,0}};
-        int i = islandPerimeter(arr);
+        int i = new Solution463().islandPerimeter(arr);
         System.out.println(i);
-
     }
+
 }

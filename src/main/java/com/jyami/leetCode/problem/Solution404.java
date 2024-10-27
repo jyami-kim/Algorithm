@@ -1,7 +1,4 @@
-package com.jyami.leetCode.problem;
-
-import com.sun.javafx.collections.ListListenerHelper;
-import org.junit.jupiter.api.Test;
+package com.jyami.leetCode.problem;;
 
 /**
  * Created by jyami on 2020/08/24
@@ -26,9 +23,8 @@ public class Solution404 {
             sumNode(node.right, false);
     }
 
-    @Test
-    void sumOfLeftLeavesTest() {
+    public static void main(String[] args) {
         TreeNode node = new TreeNode(1);
-        System.out.println(sumOfLeftLeaves(node));
+        System.out.println(new Solution404().sumOfLeftLeaves(node));
     }
 }

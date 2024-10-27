@@ -1,9 +1,6 @@
 package com.jyami.leetCode.problem;
 
 
-import org.junit.jupiter.api.Test;
-import sun.jvm.hotspot.utilities.ObjectReader;
-
 import java.util.List;
 
 /**
@@ -77,8 +74,7 @@ class WordDictionary {
         return node.isEnd();
     }
 
-    @Test
-    void pattern() {
+    public static void main(String[] args) {
         //["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
         //[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
         WordDictionary wordDictionary = new WordDictionary();
@@ -102,6 +98,5 @@ class WordDictionary {
         System.out.println(wordDictionary1.search(".at"));
         wordDictionary1.addWord("bat");
         System.out.println(wordDictionary1.search(".at"));
-
     }
 }

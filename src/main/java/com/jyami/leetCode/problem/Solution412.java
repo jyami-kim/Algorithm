@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +21,8 @@ public class Solution412 {
         }
         return result;
     }
-    @Test
-    void fizzBuzzTest(){
-        System.out.println(fizzBuzz(15));
+
+    public static void main(String[] args) {
+        System.out.println(new Solution412().fizzBuzz(15));
     }
 }

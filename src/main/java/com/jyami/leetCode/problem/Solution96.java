@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/24
  */
@@ -19,12 +17,6 @@ public class Solution96 {
             arr[i] = result;
         }
         return arr[n];
-    }
-
-    @Test
-    void numTreesTest() {
-        int i = numTrees(1);
-        System.out.println(i);
     }
 
 }

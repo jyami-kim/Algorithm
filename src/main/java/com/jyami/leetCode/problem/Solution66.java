@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 
 /**
@@ -25,9 +23,4 @@ public class Solution66 {
         return digits;
     }
 
-    @Test
-    void plusOneTest() {
-        int[] input = {9, 9, 9};
-        System.out.println(Arrays.toString(plusOne(input)));
-    }
 }

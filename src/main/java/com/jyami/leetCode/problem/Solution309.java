@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/29
  */
@@ -30,10 +28,9 @@ public class Solution309 {
         return Math.max(dp[days - 1][0], dp[days - 1][1]);
     }
 
-    @Test
-    void maxProfitTest() {
+    public static void main(String[] args) {
         int[] arr = {1, 2, 3, 0, 2};
-        int i = maxProfit(arr);
+        int i = new Solution309().maxProfit(arr);
         System.out.println(i);
     }
 

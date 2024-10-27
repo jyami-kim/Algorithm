@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 
 /**
@@ -24,12 +22,5 @@ public class Solution275 {
         }
         return h;
 
-    }
-
-    @Test
-    void hIndexTest() {
-        int[] ints = {47, 42,32,28,24,22,17,15,10,9,8};
-        int i = hIndex(ints);
-        System.out.println(i);
     }
 }

@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Stack;
 
 /**
@@ -35,10 +33,4 @@ public class Solution143 {
         System.out.println(head);
     }
 
-    @Test
-    void reorderListTest() {
-        ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-//        ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
-        reorderList(null);
-    }
 }

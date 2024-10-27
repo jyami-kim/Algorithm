@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 /**
@@ -41,10 +39,9 @@ public class Solution15 {
     }
 
 
-    @Test
-    void threeSumTest() {
+    public static void main(String[] args) {
         int[] input = {-1, 0, 1, 2, -1, -4};
-        List<List<Integer>> lists = threeSum(input);
+        List<List<Integer>> lists = new Solution15().threeSum(input);
         System.out.println(lists);
     }
 }

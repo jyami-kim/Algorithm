@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/08/08
  */
@@ -29,14 +27,14 @@ public class Solution437 {
         }
     }
 
-    @Test
-    void pathSumTest() {
+    public static void main(String[] args) {
         TreeNode treeNode = new TreeNode(10,
-                new TreeNode(5,
-                        new TreeNode(3, new TreeNode(3), new TreeNode(-2)),
-                        new TreeNode(2, null, new TreeNode(1))),
-                new TreeNode(-3, null, new TreeNode(11)));
+            new TreeNode(5,
+                new TreeNode(3, new TreeNode(3), new TreeNode(-2)),
+                new TreeNode(2, null, new TreeNode(1))),
+            new TreeNode(-3, null, new TreeNode(11)));
 
-        System.out.println(pathSum(treeNode, 8));
+        System.out.println(new Solution437().pathSum(treeNode, 8));
     }
+
 }

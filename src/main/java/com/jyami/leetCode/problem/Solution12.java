@@ -1,9 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 /**
  * Created by jyami on 2020/06/27
  */
@@ -21,10 +17,4 @@ public class Solution12 {
         return sb.toString();
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 3999})
-    void intToRomanTest(int i) {
-        String s = intToRoman(i);
-        System.out.println(s);
-    }
 }

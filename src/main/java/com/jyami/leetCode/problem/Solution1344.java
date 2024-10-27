@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/15
  */
@@ -21,9 +19,8 @@ public class Solution1344 {
         return Math.min(degree, otherDegree);
     }
 
-    @Test
-    void angleClockTest(){
-        double v = angleClock(1, 57);
+    public static void main(String[] args) {
+        double v = new Solution1344().angleClock(1, 57);
         System.out.println(v);
     }
 

@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 /**
@@ -33,9 +31,8 @@ public class Solution963 {
         return result;
     }
 
-    @Test
-    void numsSameConsecDiffTest() {
-        int[] ints = numsSameConsecDiff(2, 0);
+    public static void main(String[] args) {
+        int[] ints = new Solution963().numsSameConsecDiff(2, 0);
         System.out.println(Arrays.toString(ints));
     }
 }

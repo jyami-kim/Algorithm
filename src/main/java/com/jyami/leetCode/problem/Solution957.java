@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,12 +40,10 @@ public class Solution957 {
         return before == after ? 1 : 0;
     }
 
-    @Test
-    void prisonAfterNDaysTest() {
+    public static void main(String[] args) {
         int[] cells = {0, 1, 0, 1, 1, 0, 0, 1};
-        int[] ints = prisonAfterNDays(cells, 7);
+        int[] ints = new Solution957().prisonAfterNDays(cells, 7);
         System.out.println(Arrays.toString(ints));
-
     }
 
 }

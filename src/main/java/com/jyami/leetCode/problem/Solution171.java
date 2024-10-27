@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 /**
  * Created by jyami on 2020/08/10
  */
@@ -18,12 +15,5 @@ public class Solution171 {
             sum += (s.charAt(i) - NUMBER) * Math.pow(26, digit);
         }
         return sum;
-    }
-
-    @ParameterizedTest
-    @ValueSource(strings = {"A", "AB", "ZY", "ABC"})
-    void titleToNumberTest(String str) {
-        int i = titleToNumber(str);
-        System.out.println(i);
     }
 }

@@ -1,7 +1,5 @@
 package com.jyami.kickStart;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -53,13 +51,6 @@ public class RoundD2020AlienPiano {
         }
 
         return String.format("Case #%d: %d", caseNum, count);
-    }
-
-    @Test
-    void alienPianoTest() {
-        int[] nums = {1, 5, 500, 100, 6, 1};
-        String s = alienPiano(1, nums);
-        System.out.println(s);
     }
 
 }

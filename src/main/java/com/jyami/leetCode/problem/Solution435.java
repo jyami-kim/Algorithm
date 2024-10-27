@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -25,10 +23,9 @@ public class Solution435 {
         return result;
     }
 
-    @Test
-    void eraseOverlapIntervalsTest() {
+    public static void main(String[] args) {
         int[][] intervals = {{1, 2}, {1, 2}, {1, 2}};
-        int i = eraseOverlapIntervals(intervals);
+        int i = new Solution435().eraseOverlapIntervals(intervals);
         System.out.println(i);
     }
 }

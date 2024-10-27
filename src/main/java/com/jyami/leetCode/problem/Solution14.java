@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/18
  */
@@ -31,10 +29,4 @@ public class Solution14 {
         return sb.toString();
     }
 
-    @Test
-    public void longestCommonPrefix(){
-        String[] strs = {};
-        String s = longestCommonPrefix(strs);
-        System.out.println(s);
-    }
 }

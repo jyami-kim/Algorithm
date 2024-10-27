@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,11 +29,10 @@ public class Solution797 {
         }
     }
 
-    @Test
-    public void allPathSourceTargetTest() {
-        int[][] arrays = {{1, 2}, {3}, {3}, {}};
-        List<List<Integer>> lists = allPathsSourceTarget(arrays);
-        System.out.println(lists);
 
+    public static void main(String[] args) {
+        int[][] arrays = {{1, 2}, {3}, {3}, {}};
+        List<List<Integer>> lists = new Solution797().allPathsSourceTarget(arrays);
+        System.out.println(lists);
     }
 }

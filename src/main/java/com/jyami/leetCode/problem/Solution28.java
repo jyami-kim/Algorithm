@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/24
  */
@@ -30,9 +28,4 @@ public class Solution28 {
         return true;
     }
 
-    @Test
-    void strStrTest() {
-        int i = strStr("aaaa", "bb");
-        System.out.println(i);
-    }
 }

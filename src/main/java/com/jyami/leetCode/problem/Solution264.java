@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/07/05
  */
@@ -24,8 +22,7 @@ public class Solution264 {
         return dp[n-1];
     }
 
-    @Test
-    void nthUglyNumberTest() {
-        System.out.println(nthUglyNumber(10));
+    public static void main(String[] args) {
+        System.out.println(new Solution264().nthUglyNumber(10));
     }
 }

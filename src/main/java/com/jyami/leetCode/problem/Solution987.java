@@ -1,10 +1,7 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by jyami on 2020/08/07
@@ -69,18 +66,17 @@ public class Solution987 {
         }
     }
 
-    @Test
-    void verticalTraversalTest() {
-//        TreeNode treeNode = new TreeNode(1,
+    public static void main(String[] args) {
+        //        TreeNode treeNode = new TreeNode(1,
 //                new TreeNode(2, new TreeNode(4), new TreeNode(5)),
 //                new TreeNode(3, new TreeNode(6), new TreeNode(7)));
 //
         TreeNode treeNode = new TreeNode(0, new TreeNode(2,
-                new TreeNode(3, new TreeNode(4, null, new TreeNode(7, new TreeNode(10), new TreeNode(8))),
-                        new TreeNode(5, new TreeNode(6, new TreeNode(11), new TreeNode(9)), null)),null),
-                new TreeNode(1));
+            new TreeNode(3, new TreeNode(4, null, new TreeNode(7, new TreeNode(10), new TreeNode(8))),
+                new TreeNode(5, new TreeNode(6, new TreeNode(11), new TreeNode(9)), null)),null),
+            new TreeNode(1));
 
-        List<List<Integer>> lists = verticalTraversal(treeNode);
+        List<List<Integer>> lists = new Solution987().verticalTraversal(treeNode);
         System.out.println(lists);
     }
 

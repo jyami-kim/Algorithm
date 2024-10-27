@@ -1,7 +1,5 @@
 package com.jyami.exam.programmers;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,9 +56,8 @@ public class NBPSolution4 {
         return dp[files.length][capacity].count;
     }
 
-    @Test
-    void solutionTest() {
-        int solution = solution(1, 3, new int[]{2,2,2,2,2});
+    public static void main(String[] args) {
+        int solution = new NBPSolution4().solution(1, 3, new int[]{2,2,2,2,2});
         System.out.println(solution);
     }
 }

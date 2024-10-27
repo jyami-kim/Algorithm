@@ -1,8 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
 import java.util.HashMap;
 
 /**
@@ -27,9 +24,4 @@ public class Solution409 {
         return single > 1 ? s.length() - single + 1 : s.length();
     }
 
-    @ParameterizedTest
-    @ValueSource(strings = {"abccccdd", "aaaccccddd"})
-    void longestPalindromeTest(String str) {
-        System.out.println(longestPalindrome(str));
-    }
 }

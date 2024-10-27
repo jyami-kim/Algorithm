@@ -1,6 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -78,12 +77,11 @@ public class Solution994 {
         return true;
     }
 
-    @Test
-    void orangesRottingTest() {
+    public static void main(String[] args) {
         int[][] grid = {{2,1,1},{1,1,0},{0,1,1}};
 //        int[][] grid = {{2, 1, 1}, {0, 1, 1}, {1, 0, 1}};
 //        int[][] grid = {{0,2}};
 //        int[][] grid = {{1},{2},{1},{2}};
-        System.out.println(orangesRotting(grid));
+        System.out.println(new Solution994().orangesRotting(grid));
     }
 }

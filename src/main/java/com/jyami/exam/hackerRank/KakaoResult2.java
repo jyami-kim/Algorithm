@@ -1,7 +1,5 @@
 package com.jyami.exam.hackerRank;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -47,9 +45,7 @@ public class KakaoResult2 {
     }
 
 
-    @Test
-    void solutionTest() {
-
+    public static void main(String[] args) {
         List<List<Integer>> list = Arrays.asList(Arrays.asList(0, 2), Arrays.asList(2, 3), Arrays.asList(2, 1));
         System.out.println(solution(list));
     }

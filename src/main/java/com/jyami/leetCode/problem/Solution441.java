@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 /**
  * Created by jyami on 2020/07/01
@@ -15,11 +13,5 @@ public class Solution441 {
             increase++;
         }
         return increase - 2;
-    }
-
-    @ParameterizedTest
-    @ValueSource(ints = {0, 1, 3, 5, 8})
-    void arrangeCoinsTest(int i) {
-        System.out.println(arrangeCoins(i));
     }
 }

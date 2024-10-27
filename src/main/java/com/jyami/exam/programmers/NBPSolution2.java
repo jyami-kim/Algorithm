@@ -1,7 +1,5 @@
 package com.jyami.exam.programmers;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 /**
@@ -22,11 +20,11 @@ public class NBPSolution2 {
         return Collections.min(duplication);
     }
 
-    @Test
-    void solutionTest() {
+    public static void main(String[] args) {
         int[] arr = {2, 1, 3, 1, 4, 1, 1, 3};
 //        int[] arr = {1, 2, 3};
-        int solution = solution(arr);
+        int solution = new NBPSolution2().solution(arr);
         System.out.println(solution);
     }
+
 }

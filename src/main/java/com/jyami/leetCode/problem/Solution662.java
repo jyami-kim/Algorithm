@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -47,13 +45,12 @@ public class Solution662 {
         return result + 1;
     }
 
-    @Test
-    void widthOfBinaryTreeTest() {
-//        TreeNode root = new TreeNode(1, new TreeNode(3, new TreeNode(5), null), new TreeNode(2));
+    public static void main(String[] args) {
+        //        TreeNode root = new TreeNode(1, new TreeNode(3, new TreeNode(5), null), new TreeNode(2));
         TreeNode root = new TreeNode(1,
-                new TreeNode(3, new TreeNode(5, new TreeNode(6), null), null),
-                new TreeNode(2, null, new TreeNode(9, null, new TreeNode(7))));
-        System.out.println(widthOfBinaryTree(root));
+            new TreeNode(3, new TreeNode(5, new TreeNode(6), null), null),
+            new TreeNode(2, null, new TreeNode(9, null, new TreeNode(7))));
+        System.out.println(new Solution662().widthOfBinaryTree(root));
     }
 
 }

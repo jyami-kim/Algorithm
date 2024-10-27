@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/16
  */
@@ -34,11 +32,10 @@ public class Solution2 {
         return h.next;
     }
 
-    @Test
-    void addTwoNumbers() {
+    public static void main(String[] args) {
         ListNode l1 = new ListNode(9);
         ListNode l2 = new ListNode(9);
-        ListNode listNode = addTwoNumbers(l1, l2);
+        ListNode listNode = new Solution2().addTwoNumbers(l1, l2);
 
     }
 

@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/26
  */
@@ -48,15 +46,6 @@ public class Solution129 {
             this.result = result;
             this.pow = pow;
         }
-
-    }
-
-    @Test
-    void sumNumbersTest() {
-//        TreeNode root = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-        TreeNode root = new TreeNode(4, new TreeNode(9, new TreeNode(5), new TreeNode(1)), new TreeNode(0));
-        int i = sumNumbers(root);
-        System.out.println(i);
 
     }
 }

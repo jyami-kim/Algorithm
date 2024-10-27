@@ -1,7 +1,5 @@
 package com.jyami.leetCode.problem;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Created by jyami on 2020/06/24
  */
@@ -21,10 +19,4 @@ public class Solution26 {
         return index;
     }
 
-    @Test
-    void removeDuplicatesTest() {
-        int i = removeDuplicates(new int[]{0,0});
-        System.out.println(i);
-
-    }
 }

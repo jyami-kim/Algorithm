@@ -1,7 +1,5 @@
 package com.jyami.programmers.hash;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 import java.util.*;
 
 /**
